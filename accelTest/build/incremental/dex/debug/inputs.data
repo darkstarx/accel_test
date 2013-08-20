@@ -1,14 +1,14 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1376990982000 7405 a47129f62bccd7c0a8568c73a4ad66d72c18abe9 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity.class
+1377006557000 7562 652a9b2f69305bdad9f5e5230051b03e55beaacf /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity.class
 1376566253000 425 025cb252a784dc32880166234a39977889c7fff3 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$style.class
 1376566253000 466 61697f1ac3b3272f22d0d263743b6c30fa8232fb /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$string.class
-1376991070000 3690 655dbcf2a9e2bec8ab0efa2b5da9f1f7a8efa67b /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity$UpdateTask.class
+1377006716000 3400 b1228422d8140d172cdc58d1d793db87736b363d /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity$UpdateTask.class
 1376566253000 397 b74ca17c5faad79405a1b9ccd5750d5ac34575ee /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$layout.class
 1376566253000 455 268a721ad9673759d18a191f11e6b4a8c96e5918 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$dimen.class
 1376556583000 120675 9932e3fb9fbe54e80873e77f72a99f79e33b3250 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/libs/achartengine-1.1.0.jar
-1376984399000 2376 8e6bdcf649f7355753ddee2ff9a9f516a9e5411c /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity$1.class
+1377006557000 2376 a3d2dd0faeabaf374b79014b3c5c6634d69e2c00 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity$1.class
 1376566253000 382 96be3172333b8ed1745bda0e102e19b60a53a2d0 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$menu.class
 1369432937000 490914 3fe75433da602500cc71fcc1c46e5550291dd45d /opt/android-studio/sdk/extras/android/m2repository/com/android/support/support-v4/13.0.0/support-v4-13.0.0.jar
 1376566253000 657 9e96c8097c067d91d3a623822f8e9a91d28b55e6 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R.class

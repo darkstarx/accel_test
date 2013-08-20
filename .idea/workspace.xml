@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="axv" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="avx" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c85758e2-6add-46a4-ad46-f77a50723429" name="Default" comment="" />
@@ -80,11 +80,11 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accelTest/src/main/java/com/sq/acceltest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="0" selection-start="7883" selection-end="7883" vertical-scroll-proportion="0.6655232" vertical-offset="1682" max-vertical-offset="4725">
+            <state line="192" column="47" selection-start="7130" selection-end="7130" vertical-scroll-proportion="0.11111111" vertical-offset="1875" max-vertical-offset="4980">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onAccuracyChanged#0;class#2101:5336" expanded="false" />
-                <element signature="method#onSensorChanged#0;class#2101:5336" expanded="false" />
+                <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
+                <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
                 <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
               </folding>
@@ -95,7 +95,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accelTest/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+            <state line="11" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -191,8 +191,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,6 +247,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,7 +258,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -267,8 +267,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -415,7 +415,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -427,16 +427,16 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.375134" sideWeight="0.499723" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.375134" sideWeight="0.499723" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.6709539" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25595567" sideWeight="0.6709539" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498615" sideWeight="0.6709539" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25540167" sideWeight="0.624866" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498615" sideWeight="0.6709539" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -507,11 +507,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/accelTest/src/main/java/com/sq/acceltest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="0" selection-start="7883" selection-end="7883" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="4725">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
+            <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
+            <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accelTest/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accelTest/src/main/java/com/sq/acceltest/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onAccuracyChanged#0;class#2101:5336" expanded="false" />
-            <element signature="method#onSensorChanged#0;class#2101:5336" expanded="false" />
+            <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
+            <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
             <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
             <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
           </folding>
@@ -539,37 +559,27 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/accelTest/libs/achartengine-1.1.0.jar!/org/achartengine/GraphicalView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.6070615" vertical-offset="82" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="42" column="25" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.6070615" vertical-offset="82" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accelTest/accelTest.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Instrumentation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="16" selection-start="6187" selection-end="6187" vertical-scroll-proportion="0.0" vertical-offset="1553" max-vertical-offset="2370">
-          <folding />
-        </state>
+        <state line="116" column="16" selection-start="6187" selection-end="6187" vertical-scroll-proportion="0.0" vertical-offset="1553" max-vertical-offset="2370" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/graphics/Color.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.46226415" vertical-offset="190" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="30" column="22" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.46226415" vertical-offset="190" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="16" selection-start="15558" selection-end="15558" vertical-scroll-proportion="0.3326886" vertical-offset="5078" max-vertical-offset="6555">
-          <folding />
-        </state>
+        <state line="351" column="16" selection-start="15558" selection-end="15558" vertical-scroll-proportion="0.3326886" vertical-offset="5078" max-vertical-offset="6555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accelTest/src/main/AndroidManifest.xml">
@@ -581,11 +591,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accelTest/src/main/java/com/sq/acceltest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="0" selection-start="7883" selection-end="7883" vertical-scroll-proportion="0.6655232" vertical-offset="1682" max-vertical-offset="4725">
+        <state line="192" column="47" selection-start="7130" selection-end="7130" vertical-scroll-proportion="0.11111111" vertical-offset="1875" max-vertical-offset="4980">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onAccuracyChanged#0;class#2101:5336" expanded="false" />
-            <element signature="method#onSensorChanged#0;class#2101:5336" expanded="false" />
+            <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
+            <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
             <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
             <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
           </folding>

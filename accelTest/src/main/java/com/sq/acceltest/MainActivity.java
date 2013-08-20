@@ -54,9 +54,11 @@ public class MainActivity extends Activity {
     float prev_y = 0;
     float prev_z = 0;
     float ax = 0;
+	float ay = 0;
+	float az = 0;
     float[] sax = {0.0f, 0.0f, 0.0f, 0.0f};
-    float[] sz = {0.0f, 0.0f, 0.0f, 0.0f};
-    float ay = 0;
+	float[] say = {0.0f, 0.0f, 0.0f, 0.0f};
+	float[] saz = {0.0f, 0.0f, 0.0f, 0.0f};
     float prev_ax = 0;
     float prev_ay = 0;
 
@@ -65,6 +67,9 @@ public class MainActivity extends Activity {
     float ayv = 0;
     float real_axv = 0;
     float real_ayv = 0;
+
+	float accumx = 0;
+	float accumy = 0;
 
 
     private SensorEventListener sensorEventListener = new SensorEventListener()
@@ -164,6 +169,8 @@ public class MainActivity extends Activity {
             else ax = (float)Math.atan(x / Math.sqrt(y * y + z * z));
             if (x == 0 && z == 0) ay = 0;
             else ay = (float)Math.atan(y / Math.sqrt(x * x + z * z));
+			if (x == 0 && y == 0) ay = 0;
+			else az = (float)Math.atan(z / Math.sqrt(x * x + y * y));
 
             sax[0] = sax[1];
             sax[1] = sax[2];
@@ -172,50 +179,58 @@ public class MainActivity extends Activity {
                 sax[1] = (sax[0] + sax[2]) / 2;
             }
 
-            sz[0] = sz[1];
-            sz[1] = sz[2];
-            sz[2] = z;
-            if (sz[1] == z) {
-                sz[1] = (sz[0] + sz[2]) / 2;
-            }
+			say[0] = say[1];
+			say[1] = say[2];
+			say[2] = ay;
+			if (say[1] == ay) {
+				say[1] = (say[0] + say[2]) / 2;
+			}
 
-            float threshold = 0.00001f;
+			saz[0] = saz[1];
+			saz[1] = saz[2];
+			saz[2] = az;
+			if (saz[1] == az) {
+				saz[1] = (saz[0] + saz[2]) / 2;
+			}
+
             if (update_time.getTime() - last_updt.getTime() > 20) {
-                float flip = sz[1] > 0 ? 1 : -1;
-                float offset = sz[1] > 0 ? 0 : (float)Math.PI * 0.97f;
-                ax = sax[1] * flip + offset;
-                float axv_ = (ax - prev_ax) / (update_time.getTime() - last_updt.getTime());
-                float ayv_ = (ay - prev_ay) / (update_time.getTime() - last_updt.getTime());
+				float ax_ = sax[1];
+				float ay_ = say[1];
+				float az_ = saz[1];
+				float flip = az_ > 0 ? 1 : -1;
+				if (saz[0] > 0 && saz[1] < 0) {
+					accumx += ax_ * 2;
+					accumy += ay_ * 2;
+				} else if (saz[0] < 0 && saz[1] > 0) {
+					accumx -= ax_ * 2;
+					accumy -= ay_ * 2;
+				}
+				ax_ *= flip;
+				ay_ *= flip;
 
-                if ((sz[0] < 0 && sz[2] > 0) || (sz[0] > 0 && sz[2] < 0)) {
-                    axv_ = (axvel[0] + axvel[2]) / 2;
-                }
+				xSeries.add(update_time, accumx + ax_);		// blue
+				zSeries.add(update_time, accumy + ay_);		// yellow
+				axSeries.add(update_time, az_);		// red
+				axvSeries.add(update_time, 0);		// green
+				renderer.setXAxisMin(update_time.getTime() - 30000);
+				renderer.setXAxisMax(update_time.getTime() + 1);
+				view.repaint();
 
-                axvel[0] = axvel[1];
-                axvel[1] = axvel[2];
-                axvel[2] = axv_;
+				prev_ax = ax_;
 
-                float f = (axvel[0] < axvel[1] ? 1 : -1) * (axvel[1] < axvel[2] ? 1 : -1) *
-                        (Math.abs(axvel[2] - axvel[1]) < threshold || Math.abs(axvel[1] - axvel[0]) < threshold ? 0 : 1);
-                axvel[1] = f < 0 ? (axvel[0] + axvel[2]) / 2 : axvel[1];
-
-                xSeries.add(update_time, ax / 4);           // blue
-                zSeries.add(update_time, sz[1] / 10);       // yellow
-                axSeries.add(update_time, axv_ * 150);      // red
-                axvSeries.add(update_time, axvel[1] * 150); // green
-                renderer.setXAxisMin(update_time.getTime() - 30000);
-                renderer.setXAxisMax(update_time.getTime() + 1);
-                view.repaint();
-
-                real_axv = axv_;
-                real_ayv = ayv_;
-
-                prev_x = x;
-                prev_y = y;
-                prev_z = z;
-                prev_ax = ax;
-                prev_ay = ay;
+//                real_axv = axv_;
+//                real_ayv = ayv_;
+//
+//                prev_x = x;
+//                prev_y = y;
+//                prev_z = z;
+//                prev_ax = ax;
+//                prev_ay = ay;
             }
+            prev_x = x;
+            prev_y = y;
+            prev_z = z;
+
         }
     }
 
@@ -255,7 +270,7 @@ public class MainActivity extends Activity {
         rendererSeries1 = new XYSeriesRenderer();
         rendererSeries1.setColor(Color.rgb(0, 240, 240));
         rendererSeries1.setFillPoints(true);
-        rendererSeries1.setPointStyle(PointStyle.CIRCLE);
+        rendererSeries1.setPointStyle(PointStyle.POINT);
         renderer.addSeriesRenderer(rendererSeries1);
 
         // yellow
@@ -263,7 +278,7 @@ public class MainActivity extends Activity {
         rendererSeries2 = new XYSeriesRenderer();
         rendererSeries2.setColor(Color.rgb(200, 200, 10));
         rendererSeries2.setFillPoints(true);
-        rendererSeries2.setPointStyle(PointStyle.CIRCLE);
+        rendererSeries2.setPointStyle(PointStyle.POINT);
         renderer.addSeriesRenderer(rendererSeries2);
 
         // red
@@ -320,6 +335,7 @@ public class MainActivity extends Activity {
         if (AccelExists) syncSensorType = Sensor.TYPE_ACCELEROMETER;
 
         xSeries.clear();
+		zSeries.clear();
         axSeries.clear();
         axvSeries.clear();
         timer = new Timer();
@@ -360,6 +376,7 @@ public class MainActivity extends Activity {
                 if (AccelExists) syncSensorType = Sensor.TYPE_ACCELEROMETER;
 
                 xSeries.clear();
+				zSeries.clear();
                 axSeries.clear();
                 axvSeries.clear();
                 timer = new Timer();
