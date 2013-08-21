@@ -1,10 +1,10 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1377006557000 7562 652a9b2f69305bdad9f5e5230051b03e55beaacf /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity.class
+1377010179000 7562 870f7405db18e9f1cfbc27c1269bbc10096d015f /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity.class
 1376566253000 425 025cb252a784dc32880166234a39977889c7fff3 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$style.class
 1376566253000 466 61697f1ac3b3272f22d0d263743b6c30fa8232fb /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$string.class
-1377006716000 3400 b1228422d8140d172cdc58d1d793db87736b363d /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity$UpdateTask.class
+1377010254000 3400 3b9faf1301f7fe00b75368adebfcff7932883e9f /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/MainActivity$UpdateTask.class
 1376566253000 397 b74ca17c5faad79405a1b9ccd5750d5ac34575ee /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$layout.class
 1376566253000 455 268a721ad9673759d18a191f11e6b4a8c96e5918 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/build/classes/debug/com/sq/acceltest/R$dimen.class
 1376556583000 120675 9932e3fb9fbe54e80873e77f72a99f79e33b3250 /home/sergey/AndroidStudioProjects/accelTestProject/accelTest/libs/achartengine-1.1.0.jar

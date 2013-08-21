@@ -59,14 +59,6 @@ public class MainActivity extends Activity {
     float[] sax = {0.0f, 0.0f, 0.0f, 0.0f};
 	float[] say = {0.0f, 0.0f, 0.0f, 0.0f};
 	float[] saz = {0.0f, 0.0f, 0.0f, 0.0f};
-    float prev_ax = 0;
-    float prev_ay = 0;
-
-    float[] axvel = {0.0f, 0.0f, 0.0f}; // {prev_prev, prev, last}
-    float axv = 0;
-    float ayv = 0;
-    float real_axv = 0;
-    float real_ayv = 0;
 
 	float accumx = 0;
 	float accumy = 0;
@@ -164,6 +156,7 @@ public class MainActivity extends Activity {
             float g = 9.81f;
             x = clamp(x * alpha + prev_x * (1.0f - alpha), -g, g);
             y = clamp(y * alpha + prev_y * (1.0f - alpha), -g, g);
+			//z = clamp(z * alpha + prev_z * (1.0f - alpha), -g, g);
             // Расчет углов поворота осей X и Y
             if (y == 0 && z == 0) ax = 0;
             else ax = (float)Math.atan(x / Math.sqrt(y * y + z * z));
@@ -171,6 +164,7 @@ public class MainActivity extends Activity {
             else ay = (float)Math.atan(y / Math.sqrt(x * x + z * z));
 			if (x == 0 && y == 0) ay = 0;
 			else az = (float)Math.atan(z / Math.sqrt(x * x + y * y));
+
 
             sax[0] = sax[1];
             sax[1] = sax[2];
@@ -215,17 +209,6 @@ public class MainActivity extends Activity {
 				renderer.setXAxisMin(update_time.getTime() - 30000);
 				renderer.setXAxisMax(update_time.getTime() + 1);
 				view.repaint();
-
-				prev_ax = ax_;
-
-//                real_axv = axv_;
-//                real_ayv = ayv_;
-//
-//                prev_x = x;
-//                prev_y = y;
-//                prev_z = z;
-//                prev_ax = ax;
-//                prev_ay = ay;
             }
             prev_x = x;
             prev_y = y;

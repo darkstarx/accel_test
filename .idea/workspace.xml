@@ -80,11 +80,11 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accelTest/src/main/java/com/sq/acceltest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="47" selection-start="7130" selection-end="7130" vertical-scroll-proportion="0.11111111" vertical-offset="1875" max-vertical-offset="4980">
+            <state line="62" column="0" selection-start="1893" selection-end="1893" vertical-scroll-proportion="-1.4166666" vertical-offset="1695" max-vertical-offset="4725">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
-                <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
+                <element signature="method#onAccuracyChanged#0;class#1991:5226" expanded="false" />
+                <element signature="method#onSensorChanged#0;class#1991:5226" expanded="false" />
                 <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
               </folding>
@@ -510,8 +510,8 @@
         <state line="201" column="0" selection-start="7883" selection-end="7883" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="4725">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
-            <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
+            <element signature="method#onAccuracyChanged#0;class#1991:5226" expanded="false" />
+            <element signature="method#onSensorChanged#0;class#1991:5226" expanded="false" />
             <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
             <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
           </folding>
@@ -530,8 +530,8 @@
         <state line="13" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
-            <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
+            <element signature="method#onAccuracyChanged#0;class#1991:5226" expanded="false" />
+            <element signature="method#onSensorChanged#0;class#1991:5226" expanded="false" />
             <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
             <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
           </folding>
@@ -591,11 +591,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accelTest/src/main/java/com/sq/acceltest/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="47" selection-start="7130" selection-end="7130" vertical-scroll-proportion="0.11111111" vertical-offset="1875" max-vertical-offset="4980">
+        <state line="62" column="0" selection-start="1893" selection-end="1893" vertical-scroll-proportion="-1.4166666" vertical-offset="1695" max-vertical-offset="4725">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onAccuracyChanged#0;class#2191:5426" expanded="false" />
-            <element signature="method#onSensorChanged#0;class#2191:5426" expanded="false" />
+            <element signature="method#onAccuracyChanged#0;class#1991:5226" expanded="false" />
+            <element signature="method#onSensorChanged#0;class#1991:5226" expanded="false" />
             <element signature="method#clamp#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
             <element signature="method#norm#0;class#UpdateTask#0;class#MainActivity#0" expanded="false" />
           </folding>
