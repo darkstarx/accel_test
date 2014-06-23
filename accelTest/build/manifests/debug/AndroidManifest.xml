@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.sq.acceltest">
+<!-- From: file:/home/darkstarx/projects/accel_test/accelTest/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.sq.acceltest">
 
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="16"/>
 

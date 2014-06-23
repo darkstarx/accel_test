@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/sergey/AndroidStudioProjects/accelTestProject/accelTest/src/main/assets" />
+        <source path="/home/darkstarx/projects/accel_test/accelTest/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/sergey/AndroidStudioProjects/accelTestProject/accelTest/src/debug/assets" />
+        <source path="/home/darkstarx/projects/accel_test/accelTest/src/debug/assets" />
     </dataSet>
 
 </merger>
